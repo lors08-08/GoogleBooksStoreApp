@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2020",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "strict": true,
+    "declaration": false,
+    "baseUrl": ".",
+    "sourceMap": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "types": ["node","@types/jest", "jest",
+      "@testing-library/jest-dom"
+    ],
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@common/*": [
+        "src/common/*"
+      ],
+      "@img/*": [
+        "src/common/img/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@fonts/*": [
+        "src/common/fonts/*"
+      ],
+      "@app/*": [
+        "src/components/app/*"
+      ],
+      "@icons/*": [
+        "src/common/images/icons/*"
+      ]
+    },
+    "typeRoots": [
+      "src/common/types/declares/*"
+    ],
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "isolatedModules": false
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
